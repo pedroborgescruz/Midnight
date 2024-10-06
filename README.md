@@ -1,4 +1,3 @@
-```
 # Midnight Snack: An Obsidian Theme
 
 ## For when your notes feel like late-night indulgence—because productivity is always better with a side of guilty pleasure
@@ -40,4 +39,3 @@ Found a bug? Maybe you just need another snack. But if it’s a real issue, drop
 ---
 
 Now get back to writing, night owl. Your notes aren’t going to devour themselves!
-```
