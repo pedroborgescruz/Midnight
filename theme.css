@@ -1,13 +1,31 @@
 body {
+	/* Font Properties */
+	--font-text-theme: "Noto Sans";
+	--font-interface-theme: "Noto Sans Mono", monospace;
+	
+	/* Radius Properties */
 	--radius-s: 0px;
 	--radius-m: 0px;
 	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+	--input-radius: 10px;
+	--tab-radius-active: 5px;
+	--checkbox-radius: 5px;
+	--toggle-radius: 5px;
+	--toggle-thumb-radius: 5px;
+	--slider-thumb-radius: 5px;
+
+	/* Border Properties */
+	--border-width: 1px;
+
+	/* Text Colors */
+	--titlebar-text-color: #904b4b;
+	--nav-collapse-icon-color: #ff5454;
+	--tab-text-color-focused-active: #230827;
+	--tab-text-color: #000000;
+	--tab-text-color-active: #020201;
+	--tab-text-color-focused-highlighted: #000000;
+	--nav-item-color-hover: #ba3c28;
+	--nav-item-color: #d574a8;
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
@@ -31,4 +49,76 @@ svg * {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+	--accent-h: 202;
+	--accent-s: 100%;
+	--accent-l: 75%;
+
+	--background-primary: #1a031d;
+	--background-secondary: #23032a;
+	/* Background Colors */
+	--ribbon-background: #ff5454;
+	--titlebar-background: #a3006d;
+	--titlebar-background-focused: #7b265e;
+	--tab-background-active: #ff5454;
+	--nav-item-background-hover: #440665;
+	/* Divider and Guide Colors */
+	--tab-divider-color: #16d4ff;
+	--indentation-guide-color: #543a21;
+	color: #e4b9d1;
+	/* Font Properties */
+	--bold-color: #e558fb;
+	--italic-color: #c28fff;
+
+	--graph-line: #e558fb;
+	--graph-node: #ff5454;
+	--graph-node-tag: #e4b9d1;
+	--graph-node-attachment: #e4b9d1;
+
+	--h1-color: #ffc3a3;
+	--h2-color: #fba1a1;
+	--h3-color: #ff8b8b;
+	--h4-color: #db8cc1;
+	--h5-color: #c774ab;
+	--h6-color: #9f5a88;
+}
+  
+.theme-light {
+	--background-primary: #e0edff;
+	--background-secondary: #e1e1fd;
+	/* Background Colors */
+	--ribbon-background: #ff54544f;
+	--titlebar-background: #f6abdd;
+	--titlebar-background-focused: #ffe3f5;
+	--tab-background-active: #f6abdd;
+	--nav-item-background-hover: #ecd1fa;
+	/* Divider and Guide Colors */
+	--tab-divider-color: #ff16e0;
+	--indentation-guide-color: #ffaed2;
+	color: #8e486e;
+	/* Font Properties */
+	--bold-color: #dd00ff;
+	--italic-color: #943cff;
+
+	--h1-color: #d36f3a;
+	--h2-color: #e93838;
+	--h3-color: #ff8b8b;
+	--h4-color: #d74ba8;
+	--h5-color: #c8419b;
+	--h6-color: #923573;
+
+	--graph-line: #e558fb;
+	--graph-node: #ff5454;
+	--graph-node-tag: #631942;
+	--graph-node-attachment: #631942;
+}
+
+:root {
+	--input-focus-border-color: Highlight;
+	--input-focus-outline: 10px solid Canvas;
+	--input-unfocused-border-color: transparent;
+	--input-disabled-border-color: transparent;
+	--input-hover-border-color: rgb(255, 192, 58);
 }
